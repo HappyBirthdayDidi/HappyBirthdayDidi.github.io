@@ -16,13 +16,27 @@
 
     <header>
 		<h1>Upcoming Event<h1>
-		<nav class="topnav" id="myTopnav">
+		<div class="tnavbar" id="tmyNavbar">
 			<a href="index.html">Home</a>
 			<a href="advocate.html">Advocate</a>
 			<a href="donate.html">Donate</a>
-			<a class="active" href="GALA.html">Upcoming Event!</a>
-		</nav>
-    </header>
+			<a href="GALA.html">Upcoming Event!</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			&#9776;
+			</a>
+		</div>
+
+	<script>
+  		function myFunction() {
+    		var x = document.getElementById("myNavbar");
+    		if (x.className === "navbar") {
+     			 x.className += " responsive";
+   		 } else {
+      			x.className = "navbar";
+    		}
+ 		}
+	</script>
+</header>
 	<br><br>
 		<a href="form.html"><h6> Click to Register! </h6> 
         <img class="gala" src="Gala.png" width="750px" height="1000px"> </a>
