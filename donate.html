@@ -12,13 +12,27 @@
 </head>
 		<header>
 		<h1>Donation</h1>
-		<nav class="topnav" id="myTopnav">
+		<div class="tnavbar" id="tmyNavbar">
 			<a href="index.html">Home</a>
 			<a href="advocate.html">Advocate</a>
-			<a class="active" href="donate.html">Donate</a>
+			<a href="donate.html">Donate</a>
 			<a href="GALA.html">Upcoming Event!</a>
-		</nav>
-    </header>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			&#9776;
+			</a>
+		</div>
+
+	<script>
+  		function myFunction() {
+    		var x = document.getElementById("myNavbar");
+    		if (x.className === "navbar") {
+     			 x.className += " responsive";
+   		 } else {
+      			x.className = "navbar";
+    		}
+ 		}
+	</script>
+</header>
 
 <body class="donate">
 
